@@ -1,0 +1,18 @@
+body {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(50, 50, 50);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 50px;
+}
