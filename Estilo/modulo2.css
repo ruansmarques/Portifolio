@@ -20,6 +20,11 @@ body {
     color: lightcyan;
 }
 
+#database {
+    justify-content: center;
+    align-items: center;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -61,6 +66,19 @@ a {
 
 a:hover {
     color: lightseagreen;
+}
+
+#box1 {
+    width: 200px;
+    height: 250px;
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+#link-box1 {
+    display: block;
+    color: #3c3c3c;
+    justify-items: center;
 }
 
 #central-download {

@@ -1,57 +1,102 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Sobiscuit';
+    src: url('fonts/Sobiscuit.otf') format('opentype'), url('fonts/Sobiscuit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunny Ear';
+    src: url('fonts/Bunny\ Ear.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(50, 50, 50);
+    background-color: #1f2020;
+    font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
+    color: lightcyan;
 }
-a {
-    color: white;
-    text-decoration: none;
+
+#database {
+    justify-content: center;
+    align-items: center;
 }
-nav a:hover {
-    color: lightseagreen;
-}
-h1   {
-    color: lightseagreen;
-}
-ul {
-    color: white;
+
+nav ul {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
     align-items: center;
-    padding-top: 10px;
-    padding-right: 50px;
+    padding-inline: 30px;
+    list-style-type: none;
 }
-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid lightseagreen;
+
+main{
+    background-color: #3c3c3c;
+    width: 1080px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
 }
-.imagem-central {
+
+main img {
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 30px;
     text-align: center;
-    padding-top: 20px;
-    padding-left: 20px;
 }
-header {
-    padding: 0px 30px;
+
+h2 {
+    font-size: 24px;
 }
-main {
-    padding: 0px 30px;
+
+p {
+    font-size: 15px;
     text-align: justify;
 }
-footer {
-    display: flex;
-    justify-content: center;
+
+#link-box1 {
+    display: block;
+    width: 200px;
+    height: 250px;
+    color: #3c3c3c;
+    justify-items: center;
+}
+
+a {
+    color: lightcyan;
+    text-decoration: none;    
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+#box1 {
+    display: inline-block;
+    justify-content: space-between;
     text-align: center;
+    text-justify: auto;
+    width: 200px;
+    height: 250px;
+    background-color: lightcyan;
+    border-radius: 10px;
 }
-footer a {
-    margin: 20px;
+
+#central-download {
+    text-align: center;
+    list-style: none;
+    padding-bottom: 20px;
 }
-footer p {
-    margin-top: 2px;
+
+.voltar-pagina::before {
+    content: '⬅';
 }
-footer img {
-    width: 50px;
-    height: 50px;
+
+.passar-pagina::after {
+    content: '➡';
 }
