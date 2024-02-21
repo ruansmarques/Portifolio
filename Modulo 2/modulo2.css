@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Sobiscuit';
+    src: url('fonts/Sobiscuit.otf') format('opentype'), url('fonts/Sobiscuit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunny Ear';
+    src: url('fonts/Bunny\ Ear.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #1f2020;
+    font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
+    color: lightcyan;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    list-style-type: none;
+}
+
+main{
+    background-color: #3c3c3c;
+    width: 1080px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main img {
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+a {
+    color: lightcyan;
+    text-decoration: none;    
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+#central-download {
+    text-align: center;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.voltar-pagina::before {
+    content: '⬅';
+}
+
+.passar-pagina::after {
+    content: '➡';
+}

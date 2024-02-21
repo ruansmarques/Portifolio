@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados 15</title>
+    <link rel="shortcut icon" href="../15 - Seletores personalizados/img/view-apple.png" type="image/png-icon">
+    <link rel="stylesheet" href="../modulo2.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="voltar-pagina">
+                 <a href="../14 - Tipografia/index14.html" rel="self">Capítulo 14</a>
+            </li>
+            <li>
+                <h1>
+                    <a href="C:/Users/ruanm/OneDrive/Documentos/MeusProjetosDEV/Portifolio/index.html">Menu principal</a>
+                </h1>
+            </li>
+            <li class="passar-pagina">
+                 <a href="../16 - Modelo de caixas/index16.html" rel="">Capítulo 16</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Tipos de seletores</h1>
+
+        <h2>Identificação "id"</h2>
+        <p>
+            Usa-se o seletor "id" para aplicar estilos à elementos únicos. Um exemplo disso, é a página do Capítulo 14 desse curso, onde foi utilizado uma Id no parágrafo que explicava a aplicação de fontes personalizadas. Logo, para aplicar a fonte estilizada naquele parágrafo único foi usado o seletor de identificação para diferenciar aquele parágrafo dos demais.
+        </p>
+        <p>
+            Quando usado um "id" no documento HTML, é preciso usar "#" para correspondê-lo em um arquivo CSS, ou em uma estilização local.
+        </p>
+
+        <h2>Classes "Class"</h2>
+        <p>
+            Usa-se o seletor "class" para aplicar estilos à vários elementos de uma vez. Uma aplicação possível para isso quando se quer estilizar todos os parágrafos de um subtítulo específico, assim, todas os elementos com a mesma classe serão estilizados com a mesma propriedade.
+        </p>
+        <p>
+            Quando usado uma "class" no documentos HTML, é preciso usar "." para correspondê-lo em um arquivo CSS, ou em uma estilização local.
+        </p>
+
+        <h2>Pseudo-class</h2>
+        <p>
+            São seletores que definem o estado de um elemento. O caso mais exemplar é a pseudo classe "hover", que define um estado do link. Aproveitando esse assuntos, podemos citar algumas pseudo-classes relacionadas ao link, tais como:
+            <ul>
+                <li><strong>a:link</strong> = para deixar o link sempre em estado original</li>
+                <li><strong>a:hover</strong> = para estilizar o link quando passar o mouse em cima</li>
+                <li><strong>a:visited</strong> = para estilizar o link quando já clicado</li>
+                <li><strong>a:active:</strong> = para estilizar o link quando ele estiver sendo clicado</li>
+            </ul>
+        </p>
+
+        <h2>Pseudo-element</h2>
+        <p>
+            São seletores que aplicam uma modificação em um elemento. Como é o exemplo da guia superior dessa página, que possui um simbolo de seta para esquerta no link de ir para o capítulo anterior e um simbolo de seta para a direita para ir para o link posterior.
+        </p>
+    </main>
+
+    <footer>
+        <h1>Baixe o arquivo desta página abaixo:</h1>
+
+        <ul id="central-download">
+            <li>
+                <a href="download/index1.zip" type="application/zip">clique aqui para baixar</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

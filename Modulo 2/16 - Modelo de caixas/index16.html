@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas 16</title>
+    <link rel="shortcut icon" href="../15 - Seletores personalizados/img/view-apple.png" type="image/png-icon">
+    <link rel="stylesheet" href="../modulo2.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="voltar-pagina">
+                 <a href="../15 - Seletores personalizados/index15.html" rel="self">Capítulo 15</a>
+            </li>
+            <li>
+                <h1>
+                    <a href="C:/Users/ruanm/OneDrive/Documentos/MeusProjetosDEV/Portifolio/index.html">Menu principal</a>
+                </h1>
+            </li>
+            <li class="passar-pagina">
+                 <a href="" rel="next">Capítulo 17</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Sistema de caixas</h1>
+        <h2>Composição de uma caixa</h2>
+        <p>
+            Todo elemento possui uma:
+            <li>Altura: "height"</li>
+            <li>Largura: "width"</li>
+        </p>
+        <p>
+            Ao criar uma borda em um elemento, o seu contorno ocupa o limite da borda da caixa do elemento. Para criar uma borda, basta usar a tag:
+            <li>"border"</li>
+        </p>
+        <p>
+            Para afastar a borda do limite da caixa, bastar usar a tag:
+            <li>"padding"</li>
+        </p>
+        <p>
+            Para afastar qualquer outro elemento do limite de uma borda, basta usar a tag:
+            <li>"margin"</li>
+        </p>
+        <p>
+            É possivel criar uma outra borda além de uma já criada, deixando as duas juntas uma da outra. Para isso, basta usar a tag:
+            <li>"outline"</li>
+        </p>
+
+        <h2>Tipos de caixas</h2>
+        <p>
+            Há dois tipos de caixas, sendo o tipos "box-level" e do tipo "in-line". Uma caixa "box-level" possui uma quebra de linha automática após sua adição. Já uma caixa "in-line" não possui quebra de linha, caso necessário pode-se aplicar uma pela tag "hr". 
+        </p>
+
+        <h3>Box-level</h3>
+        <p>
+            Alguns elementos do tipo "box-level" são:
+            <li>"div"</li>
+            <li>"h1-h6"</li>
+            <li>"p"</li>
+            <li>"main"</li>
+            <li>"header"</li>
+            <li>"nav"</li>
+            <li>"article"</li>
+            <li>"aside"</li>
+            <li>"footer"</li>
+            <li>"form"</li>
+            <li>"video"</li>
+        </p>
+
+        <h3>Inline-level</h3>
+        <p>
+            Alguns elementos do tipo "in-line" são:
+            <li>"span"</li>
+            <li>"a"</li>
+            <li>"code"</li>
+            <li>"small"</li>
+            <li>"strong"</li>
+            <li>"em"</li>
+            <li>"sup-sub"</li>
+            <li>"label"</li>
+            <li>"button"</li>
+            <li>"input"</li>
+            <li>"select"</li>
+        </p>
+
+        <h2>Shorthands</h2>
+        <p>
+            Shorthands são atalhos para simplificar a transcrição de um código, onde é retirado a necessidade de colocar as propriedades de uma estilização, colocando apenas os seus parâmentros.
+        </p>
+
+        <h3>Bordas</h3>
+        <p>
+            Logo, troca-se o parâmentro "1." por "2."
+            <ol>
+                <li>border-width: 10px; <br>
+                    border-style: solid; <br>
+                    color: blue; <br>
+                </li>
+                <br>
+                <li>border: 10px solid blue;</li>
+            </ol>
+        </p>
+
+        <h3>Contorno</h3>
+        <p>
+            Logo, troca-se o parâmentro "1." por "2."
+            <ol>
+                <li>outline-width: 10px; <br>
+                    outline-style: solid; <br>
+                    color: blue; <br>
+                </li>
+                <br>
+                <li>outline: 10px solid blue;</li>
+            </ol>
+        </p>
+
+        <h3>Preenchimento</h3>
+        <p>
+            Logo, troca-se o parâmentro "1." por "2."
+            <ol>
+                <li>padding-top: 10px; <br>
+                    padding-right: 10px; <br>
+                    padding-bottom: 10px; <br>
+                    padding-left: 10px;<br>
+                </li>
+                <br>
+                <li>padding: 10px 10px 10px 10px;</li>
+            </ol>
+        </p>
+
+        <h3>Margem</h3>
+        <p>
+            Logo, troca-se o parâmentro "1." por "2."
+            <ol>
+                <li>margem-top: 10px; <br>
+                    margem-right: 10px; <br>
+                    margem-bottom: 10px; <br>
+                    margem-left: 10px;<br>
+                </li>
+                <br>
+                <li>margem: 10px 10px 10px 10px;</li>
+            </ol>
+        </p>
+
+        <h2>Tipos de Grouping Tags</h2>
+        <p>
+            Servem para organizar as etapas de transcrição do código de um site. No protocolo HTML4, as Grouping Tags eram organizadas por diversas "divs" identificadas por um seletor "id". Atualmente, o HTML5 possui tags específicas para cada etapa da programação.
+        </p>
+
+        <h3>Cabeçalho</h3>
+        <p>
+            Usada para fixar informações principais de um site. Para aplicá-lo, usa-se a tag:
+        <li>"header"</li>
+        </p>
+
+        <h3>Navegação</h3>
+        <p>
+            Usada como uma sub-divisão do cabeçalho.  Para aplicá-lo, usa-se a tag:
+            <li>"nav"</li>
+        </p>
+        <h3>Principal</h3>
+        <p>
+            Usada para receber o conteúdo principal do site.  Para aplicá-lo, usa-se a tag:
+            <li>"main"</li>
+        </p>
+        <h3>Sessão</h3>
+        <p>
+            Usada como uma sub-divisão do Principal.  Para aplicá-lo, usa-se a tag:
+            <li>"section"</li>
+        </p>
+        <h3>Artigo</h3>
+        <p>
+            Usada como uma sub-divisão da Sessão. Para aplicá-lo, usa-se a tag:
+            <li>"article"</li>
+        </p>
+        <h3>À parte</h3>
+        <p>
+            Usada como uma sub-divisão dos Artigos. Para aplicá-lo, usa-se a tag:
+            <li>aside</li>
+        </p>
+        <h3>Rodapé</h3>
+        <p>
+            Usada para fixar informações complementares sobre o site. Para aplicá-lo, usa-se a tag:
+            <li>"footer"</li>
+        </p>
+    </main>
+
+    <footer>
+        <h1>Baixe o arquivo desta página abaixo:</h1>
+
+        <ul id="central-download">
+            <li>
+                <a href="download/index1.zip" type="application/zip">clique aqui para baixar</a>
+            </li>
+        </ul>
+    </footer>
+</body>

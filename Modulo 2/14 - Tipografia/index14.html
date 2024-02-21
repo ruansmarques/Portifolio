@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia 14</title>
+    <link rel="shortcut icon" href="../15 - Seletores personalizados/img/view-apple.png" type="image/png-icon">
+    <link rel="stylesheet" href="../modulo2.css">
+    <style>
+        #personalizado {
+                font-family: 'Bunny Ear';
+                font-size: 3em;
+                margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                 <a href="../13 - Manipulação de cores/index13.html" rel="self">&#11013 Capítulo 13</a>
+            </li>
+            <li>
+                <h1>
+                    <a href="C:/Users/ruanm/OneDrive/Documentos/MeusProjetosDEV/Portifolio/index.html">Menu principal</a>
+                </h1>
+            </li>
+            <li>
+                 <a href="../15 - Seletores personalizados/index15.html" rel="next">Capítulo 15 &#10145</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Tipografia</h1>
+
+        <h2>Anatomia das fontes</h2>
+        <p>
+            As letras possuem várias medidas em sua composição. A letra X é o ponto base para se definir a altura de todas as outras letras dentro de uma fonte, essa letra define a altura das letras minúsculas. Os componentes das alturas de uma fonte são: <br>
+            <ul>
+                <li>Altura X</li>
+                <li>Altura das maiúscula</li>
+                <li>Ascendentes</li>
+                <li>Descendentes</li>
+                <li>Corpo</li>
+            </ul>
+        </p>
+        
+        <p>
+            Cada letra também possui algumas características de estilização que as diferenciam das outras. Algumas dessas características são chamadas de componentes anatômicos de uma letra, alguns desses componentes são:
+            <ul>
+                <li>Serifas</li>
+                <li>Hastes</li>
+                <li>Filete</li>
+                <li>Arcos</li>
+                <li>Esporão</li>
+                <li>Vérticie</li>
+                <li>Terminal</li>
+                <li>Braço</li>
+                <li>Pernas</li>
+                <li>Pés</li>
+                <li>Espinha</li>
+                <li>Olho</li>
+                <li>Cauda</li>
+            </ul>
+        </p>
+
+        <p>
+            Um caso interessante é que a estilização das letras podem diminuir nosso esforço de leitura, visto que o cérebro humano identifica as palavras como um "bloco de letras", evitando identificar letra por letra para discernir a palavra. Um exemplo prático disso é o texto abaixo: <br> <br>
+            <img src="img/001.png" alt="imagem decifrada para leitura" width="380px" height="180px">
+        </p>
+
+        <h2>Categorias de fontes</h2>
+        <p>
+            <ul>
+                <li>Fontes serifadas: <p style="font-family: serif;">"Olá mundo!"</p></li>
+                <li>Fontes sem serifas: <p style="font-family: sans-serif;">"Olá mundo!"</p></li>
+                <li>Fontes monoespaçadas: <p style="font-family: consolas;">"Olá mundo!"</p></li>
+                <li>Fontes HandWrites: <p style="font-family: arial;">"Olá mundo!"</p></li>
+                <li>Fontes display: <p style="font-family: arial;">"Olá mundo!"</p></li>
+            </ul>
+        </p>
+
+        <h2>Tamanho das fontes</h2>
+        <p>
+            Existem váridas formas de configurar o tamnho das fontes em um arquivo Web, podendo ser definidas por:
+            <ul>
+                <li>Medidas <strong>absolutas</strong> (cm, mm, in, px, pt, pc)</li>
+                <li>Medidas <strong>relativas</strong> (em, ex, rem, vw, vh, %).</li>
+            </ul>
+        </p>
+        <p>
+            Essas alterações mudam o tamanho do corpo das letras. A escala mais recomenda é o uso do "<strong>px</strong>" e do "<strong>em</strong>", sendo que "16px" equivale à "1em".
+        </p>
+
+        <h2>Modelação de fontes</h2>
+        <p>
+            Para mudar a largura do corpo de uma fonte, utilizamos a tag "Weigth", que significa Peso. <br>
+            Atenção para não confundi-la com as tags "Width" e "Height", que significam Largura e Altura.
+        </p>
+        <p>
+            Essa tag "Weigth" possui uma escala que vão de 100 até 900, mudando a largura da fonte entre esse intervalo. <br>
+            Há também predefinições que algumas fontes possuem, podendo-se usar no lugar das escalas, as propriedades "lighter, normal, bold e bolder".
+        </p>
+        <p>
+            Também há a possibilidade de baixar fontes prontas da internet. Para isso, basta obter os arquivos ".otf" ou ".ttf" das fontes, logo basta usar o seletor "@font-face" no arquivo CSS e indexar os arquivos da font na url da font-face, em seguida tem que adicionar o formato "format" da fonte, sendo:
+            <ul>
+                <li>Para o formato ".ttf" usa-se: <br> format('truetype')</li>
+                <br>
+                <li>Para o formato ".otf" usa-se: <br> format('opentype')</li>
+            </ul>
+        </p>
+        <p id="personalizado">
+            Exemplo
+        </p>
+        <h2>Alinhamento de textos</h2>
+        <p>
+            Em síntese, exitem 4 tipos principais de alinhamento de textos, para aplicá-los bastar usar a tag "text-alight" e seus argumentos, tais eles:
+            <ul>
+                <li>text-alight: left;</li>
+                <li>text-alight: right;</li>
+                <li>text-alight: center;</li>
+                <li>text-alight: justify;</li>
+            </ul>
+        </p>
+    </main>
+
+    <footer>
+        <h1>Baixe o arquivo desta página abaixo:</h1>
+
+        <ul id="central-download">
+            <li>
+                <a href="" type="application/zip">clique aqui para baixar</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
