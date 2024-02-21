@@ -35,9 +35,10 @@ nav ul {
 
 main{
     background-color: #3c3c3c;
-    width: 1080px;
+    max-width: 1080;
     padding: 20px;
-    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 10px;
 }
 
