@@ -50,7 +50,7 @@ header h1 {
 
 header p {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
     color: var(--cor0);
 }
 
@@ -58,8 +58,10 @@ nav {
     background-color: var(--cor5);
     height: 30px;
     width: 100%;
+}
+
+nav div {
     padding-left: 20px;
-    margin: 0px
 }
 
 nav a {
