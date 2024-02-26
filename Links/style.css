@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   --primary-color: #2eb6aa;
   --primary-hover: #60e8dc;
@@ -163,6 +165,7 @@ footer {
   transition: opacity 400ms;
 
   color: var(--text-color);
+  margin-bottom: 20px;
 }
 
 footer:hover {
