@@ -12,6 +12,10 @@
 
 /* CONFIGURAÇÕES DE CAIXAS DE FUNDO */
 
+body {
+    background-color: azure;
+}
+
 header {
     background-image: linear-gradient(to bottom, #3c3c3c, #181818);
     height: 150px;
@@ -23,10 +27,11 @@ nav {
     background-color: #181818;
     display: flex;
     height: 50px;
+    width: 100%;
 }
 
 main {
-
+    margin: 20px 5% 20px 5%
 }
 
 footer {
@@ -56,10 +61,18 @@ header h1 {
 nav ul {
     display: flex;
     align-items: center;
-    margin: 0px 20px 0px 20px;
+    margin: 0px auto;
 
     list-style: none;
 }
+
+nav ul img {
+    display: block;
+    width: 25px;
+}
+
+nav ul#Menu {margin-left: 1%;}
+nav ul#Sociais {margin-right: 1%;}
 
 nav a {
     display: block;
@@ -78,4 +91,13 @@ nav a:hover {
     
     font-weight: bold;
     color: #181818;
+}
+
+main h1 {
+    text-align: center;
+    margin: 20px 0px 10px 0px
+}
+
+main p {
+    text-align: justify;
 }
