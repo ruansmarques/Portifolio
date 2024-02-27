@@ -2,7 +2,7 @@
 
 @charset "UTF-8";
 
-* { margin: 0px; padding: 0px;}
+* { margin: 0px; padding: 0px; font-size: 16px;}
 
 /* PREDEFINIÇÕES DE ROOT */
 
@@ -25,17 +25,22 @@ header {
 
 nav {
     background-color: #181818;
+    color: azure;
     display: flex;
     height: 50px;
     width: 100%;
 }
 
 main {
-    margin: 20px 5% 20px 5%
+    margin: 20px 10% 20px 10%;
 }
 
 footer {
-
+    background-color: #181818;
+    text-align: center;
+    color: azure;
+    position: fixed bottom;
+    padding: 0.5%;
 }
 
 /* CONFIGURAÇÕES DE CONTEÚDO INTERNO */
@@ -48,14 +53,22 @@ header img {
     width: 100px;
     border: 5px;
     border-style: solid;
-    border-color: #01dea5;
+    border-color: cadetblue;
     border-radius: 50%;
 }
 
 header h1 {
-    color: #01dea5;
+    color: azure;
     padding-top: 10px;
     text-align: center;
+}
+
+header a {
+    color: azure;
+    font-size: 2.5em;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav ul {
@@ -83,10 +96,32 @@ nav a {
     color: aliceblue;
 }
 
+article h1 {
+    background-image: linear-gradient(to right, #3c3c3c, #f0f0ff, #3c3c3c);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+article p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25em
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+
 /* CONFIGURAÇÕES DE ANIMAÇÃO */
 
+header a:hover {
+    color: cadetblue;
+}
+
 nav a:hover {
-    background-color: #01dea5;
+    background-color: cadetblue;
     border-radius: 10px;
     
     font-weight: bold;
