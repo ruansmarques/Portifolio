@@ -5,76 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
     <link rel="shortcut icon" href="icones/botao-de-inicio.png">
-    <link rel="stylesheet" href="index.css">
-    <style>
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid lightseagreen;
-        }
-        .imagem-central {
-            text-align: center;
-            padding-top: 20px;
-            padding-left: 20px;
-        }
-        header {
-            padding: 0px 30px;
-        }
-        main {
-            text-align: justify;
-        }
-        footer {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-        footer a {
-            margin: 20px;
-        }
-        footer p {
-            text-align: center;
-            margin-top: 2px;
-        }
-        footer img {
-            margin-top: 20px;
-            width: 50px;
-            height: 50px;
-        }
-
-        h2 {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
+    <header>
+        <a href="#"><img src="../Portifolio/zip-set/images/ruansmarques - logo1.png" alt="Foto de perfil do autor"></a>
+    </header>
+
     <nav>
-        <ul>
-            <li>
-                <a href="index.html" rel="self">Sobre mim</a>
-            </li>
-            <li>
-                <a href="Paginas/BancoDeDados.html" rel="main">Projetos</a>
-            </li>
-            <li>
-                <a href="https://instagram.com/ruansmarques" target="_blank" rel="external">Contato</a>
-            </li>
+        <ul id="Menu">
+            <li><a href="#" title="Permanecer na página">Sobre mim</a></li>
+            <li><a href="Paginas/BancoDeDados.html" title="Conhecer projetos do autor">Projetos</a></li>
+            <li><a href="#" title="Conhecer artigos do autor">Tech blog</a></li>
+        </ul>
+
+        <ul id="Sociais">
+            <li><a href="#"><img src="../Portifolio/zip-set/images/github (1).png" alt="instagram" title="Ir para o GitHub do autor"></a></li>
+            <li><a href="#"><img src="../Portifolio/zip-set/images/instagram (1).png" alt="instagram" title="Ir pro Instagram do autor"></a></li>
+            <li><a href="#"><img src="../Portifolio/zip-set/images/whatsapp (1).png" alt="instagram" title="Ir para o Whatsapp do autor"></a></li>
         </ul>
     </nav>
-
-    <header>
-        <div class="imagem-central">
-            <img src="img/perfil.jpg" alt="">
-        </div>
-        <h1>
-            Ruan Marques
-        </h1>
-        <h2>
-            Desenvolvedor de software
-        </h2>
-    </header>
 
     <main>
         <section class="titulo-sobre-mim">
@@ -82,10 +33,10 @@
                 Sobre mim:
             </h3>
             <p>
-                Seja bem vindo ao meu Website. Por aqui você acompanhará todo o meu progresso no mundo da programação. Estou sempre em busca de conhecimento e evolução na área, melhorando a cada dia todas as minhas habilidades.
+                Seja bem vindo ao meu Website. Por aqui você acompanhará todo o meu progresso no mundo da programação. A cada atualização que o site receber, será um sinal de evolução e melhoria das técnicas usadas por aqui.
             </p>
             <p>
-                Não reparem a bagunça, logo isso terá cara de site profissional, pois criei esse modelo em apenas 2 dias de estudos, antes mesmo de entrar para a faculade. Enquanto isso, tenho muito o que aprender e muita coisa para corrigir e melhorar por aqui.
+                Então não reparem a bagunça, logo isso terá cara de site profissional. Criei esse modelo com apenas 2 dias de estudos, de fato há muito o que aprender e melhorar. Mas enquanto isso não acontece, fique a vontade para explorar os meus testes e conhecer o estado mais primitivo de desenvolvimento de uma pagina web.
             </p>
         </section>
         <section>
@@ -97,16 +48,10 @@
             </p>
         </section>
     </main>
-
+    
     <footer>
-        <a href="https://github.com/ruansmarques" target="_blank" rel="external">
-            <img src="img/github.png" alt="ícone Github"></img>
-            <p>GitHub</p>
-        </a>
-        <a href="https://instagram.com/ruansmarques" target="_blank" rel="external">
-            <img src="img/instagram.png" alt="ícone Instagram"></img>
-            <p>Instagram</p>
-        </a>
+        <p>Site desenvolvido por <a href="links.html">Ruan Marques</a> <br>
+        &#169; 2024 - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

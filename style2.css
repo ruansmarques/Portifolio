@@ -2,6 +2,20 @@
 
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Sobiscuit';
+    src: url('fonts/Sobiscuit.otf') format('opentype'), url('fonts/Sobiscuit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunny Ear';
+    src: url('fonts/Bunny\ Ear.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 * { margin: 0px; padding: 0px; font-size: 16px;}
 
 /* PREDEFINIÇÕES DE ROOT */
@@ -13,7 +27,7 @@
 /* CONFIGURAÇÕES DE CAIXAS DE FUNDO */
 
 body {
-    background-color: azure;
+    background-color: #181818;
 }
 
 header {
@@ -32,29 +46,32 @@ nav {
 }
 
 main {
-    margin: 20px 10% 20px 10%;
+    background-color: #3c3c3c;
+    max-width: 1080;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 10%;
+    color: lightcyan;
 }
 
 footer {
+    display: block;
+    align-self: end;
     background-color: #181818;
     text-align: center;
     color: azure;
     position: fixed bottom;
-    padding: 0.5%;
+    padding: 1%;
 }
 
 /* CONFIGURAÇÕES DE CONTEÚDO INTERNO */
 
 header img {
     display: block;
+    padding: 25px;
     margin: auto;
-    justify-items: center;
-
-    width: 100px;
-    border: 5px;
-    border-style: solid;
-    border-color: cadetblue;
-    border-radius: 50%;
+    height: 100px;
+    width: auto;
 }
 
 header h1 {
@@ -64,6 +81,7 @@ header h1 {
 }
 
 header a {
+    display: block;
     color: azure;
     font-size: 2.5em;
     padding-top: 10px;
@@ -90,22 +108,29 @@ nav ul#Sociais {margin-right: 1%;}
 nav a {
     display: block;
     padding: 10px;
-
+    
+    font-family: Roboto, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     font-weight: bold;
     color: aliceblue;
 }
 
-article h1 {
-    background-image: linear-gradient(to right, #3c3c3c, #f0f0ff, #3c3c3c);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-radius: 5px;
-    font-size: 2em;
+main h1 {
+    font-size: 30px;
+    text-align: center;
 }
 
-article p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.25em
+main h3 {
+    font-family: Roboto, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px 0px 10px 0px;
+    font-size: 32px;
+}
+
+main p {
+    font-family: Roboto, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px 0px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 footer a {
@@ -121,7 +146,7 @@ header a:hover {
 }
 
 nav a:hover {
-    background-color: cadetblue;
+    background-color: #28ffc6;
     border-radius: 10px;
     
     font-weight: bold;
