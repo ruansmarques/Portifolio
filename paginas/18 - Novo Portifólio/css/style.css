@@ -251,6 +251,7 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 nav {
   width: 100vw;
   height: var(--nav-height);
+  background-color: rgba(0, 0, 0);
 
   display: flex;
 
